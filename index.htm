@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div id="container">
+		<div id="box">
+			<h1>Calculadora Simples</h1>
+
+			<form name="calc">
+				<input type="text" name="log" />
+				<br />
+
+				<input type="button" value="7" onclick="insere( value )" />
+				<input type="button" value="8" onclick="insere( value )" />
+				<input type="button" value="9" onclick="insere( value )" />
+				<input type="button" value="(" onclick="insere( value )" />
+				<input type="button" value=")" onclick="insere( value )" />
+				<br />
+
+				<input type="button" value="4" onclick="insere( value )" />
+				<input type="button" value="5" onclick="insere( value )" />
+				<input type="button" value="6" onclick="insere( value )" />
+				<input type="button" value="*" onclick="insere( value )" />
+				<input type="button" value="/" onclick="insere( value )" />
+				<br />
+
+				<input type="button" value="1" onclick="insere( value )" />
+				<input type="button" value="2" onclick="insere( value )" />
+				<input type="button" value="3" onclick="insere( value )" />
+				<input type="button" value="+" onclick="insere( value )" />
+				<input type="button" value="-" onclick="insere( value )" />
+				<br />
+
+				<input type="reset" value="C" />
+				<input type="button" value="0" onclick="insere( value )" />
+				<input id="enviar" type="button" value="=" onclick="calcula();" />
+				<input type="button" value="." onclick="insere( value )" />
+			</form>
+		</div>
+	</div>
+
+	<script>
+		function insere(x){
+			var atual = document.calc.log.value;
+			document.calc.log.value = atual + x;
+		}
+
+		function calcula(){
+			var resultado = eval( document.calc.log.value );
+			document.calc.log.value = resultado;
+		}
+	</script>
+
+
+</body>
+</html>

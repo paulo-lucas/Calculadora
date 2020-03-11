@@ -1,0 +1,45 @@
+body{
+	background-color: #bbbbbb;
+}
+
+#container{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#box{
+	display: inline-block;
+	background-color: white;
+	padding: 20px;
+	border-radius: 6px;
+}
+
+h1{
+	font-family: sans-serif; 
+}
+
+input[type=text]{
+	padding: 2px;
+	width: 90%;
+	border-radius: 4px;
+}
+
+input[type=button], input[type = reset]{
+	min-width: 40px;
+	margin: 4px 8px;
+	border-radius: 2px;
+}
+
+#enviar{
+	background-color: #1E90FF;
+	color: white
+}
+
+input[type=reset]{
+	background-color: orange;
+	color: white;
+}
+
